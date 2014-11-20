@@ -10,10 +10,10 @@ function varargout = loglogadj(X,Y, deltaINy)
     if all(X>0)
         if all(Y>0)
         else
-            error('*** The input ''Y'' mustn''t contain non-positive values.');
+            error('*** The input ''Y'' can only contain positive values.');
         end
     else
-        error('*** The input ''X'' mustn''t contain non-positive values.');
+        error('*** The input ''X'' can only contain positive values.');
     end
 
     logX = row2columnINlog(X);
